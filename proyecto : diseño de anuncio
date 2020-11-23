@@ -1,0 +1,29 @@
+background(235, 56, 56);
+fill(20, 9, 9);
+textSize(30);
+text("LA PASTILLA !", 108, 30);
+textSize(10);
+text("UNA PASTILLA DE QUITOLINA !", 134, 62);
+
+var pastilla = 125;
+var caja=43;
+var paquete=175;
+var pastillas=220;
+draw= function() {
+    //caja
+fill(189, 155, 155);
+rect(caja,93,94,193);
+//paquete
+fill(230, 221, 221);
+rect(paquete,98,185,85);
+//pastillas
+fill(150, 48, 48);
+ellipse(pastillas,140,41,43);
+ellipse(310,141,41,43);
+//pastilla
+fill(150, 48, 48);
+ellipse(269,281,pastilla,pastilla);
+
+pastilla=pastilla-1;
+
+};
