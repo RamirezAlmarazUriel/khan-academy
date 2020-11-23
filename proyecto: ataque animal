@@ -1,0 +1,28 @@
+var bodyX = 205;
+var bodyY = 149;
+var bodyW = 187;
+var faceW = bodyW/-2;
+var ojoSize=0;
+var patas=0;
+draw = function() {
+    background(207, 254, 255);
+    fill(240, 209, 36);
+    ellipse(bodyX, bodyY, bodyW, 126); // body?
+    ellipse(bodyX, bodyY-70, faceW, 62); // face?
+    //ojos
+    fill(31, 17, 17);
+    ellipse(189,75,ojoSize,ojoSize);
+    ellipse(230,75,ojoSize,ojoSize);
+    //patas
+    fill(232, 54, 54);
+    ellipse(172,221,patas,patas);
+    ellipse(235,221,patas,patas);
+    //pico
+    fill(255, 0, 0);
+    stroke(224, 91, 74);
+    triangle(200,82,213,110,220,80);
+
+    ojoSize=ojoSize+1;
+    patas=patas+1;
+    
+};
