@@ -1,0 +1,17 @@
+background(186, 145, 20); // wooden table
+ellipse(200, 200, 350, 350); // plate
+ellipse(200, 200, 300, 300); 
+//palitos de pan
+stroke(235, 227, 65);
+strokeWeight(10);
+line(316,263,202,263);
+line(316,200,200,201);
+line(314,230,203,229);
+//lasaña 
+stroke(217, 117, 117);
+fill(260,0,0);
+rect(103,106,142,64);
+//pure
+fill(52, 237, 55);
+stroke(31, 227, 28);
+ellipse(131,237,80,80);
