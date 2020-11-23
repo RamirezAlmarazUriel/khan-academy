@@ -1,0 +1,39 @@
+var xPositions = [];
+var yPositions = [];
+var Colores =[];
+for (var count =0;  count<10; count++){
+   xPositions.push(random(0,400));
+   yPositions.push(random(0,400));
+}
+/*var xPositions = [50,150,250,350];
+var yPositions = [0,0,0,0];
+//colores
+var Colores = [color(random(0,250),random(0,250),random(0,250)),color(random(0,250),random(0,250),random(0,250)),color(random(0,250),random(0,250),random(0,250)),color(random (0,250),random (0,250),random(0,250))];*/
+
+//figuras
+var  figuras = getImage("avatars/orange-juice-squid");
+
+var mouseClicked = function (){
+     xPositions.push(random (0,400));
+    yPositions.push(0); 
+    Colores.push(color(random(0,250),random(0,250),random(0,250)));
+};
+
+draw = function() {
+    background(204, 247, 255);
+
+    for (var i = 0; i < xPositions.length; i++) {
+        noStroke();
+        fill(Colores[i]);
+        //original
+        ellipse(xPositions[i], yPositions[i], 40, 40);
+        //figura
+        //image(figuras,xPositions[i], yPositions[i], 40, 40);
+        //velocidad de caida
+        yPositions[i] += 2;
+        if(yPositions[i]>400){
+            yPositions[i]=4;
+        }
+    }
+    
+};
