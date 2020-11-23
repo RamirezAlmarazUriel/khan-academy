@@ -1,0 +1,35 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(60, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+var answer = floor(random(1 , 6));
+if (answer === 1) {
+    text("la vida es ", 176, 200);
+    text("felicidad", 175, 229); 
+}
+
+    if(answer===2){
+     text("claro que si",169,227);
+     
+    
+    }
+    
+    if(answer===3){
+    text("no rendirse",170,211);
+    text("no dejarte caer",158,242);
+
+    }
+    
+    if(answer===4){
+        text("siempre motivate",155,220);
+        text("siempre adelante",151,241);
+        
+    }
+    
+    if(answer===5){
+        text("tu sueños",172,220);
+        text("se cumplen",167,241);
+    }
+
+//bola magica motivadora
