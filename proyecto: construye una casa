@@ -1,0 +1,30 @@
+background(219, 255, 255);
+//cuadros fachada
+fill(112, 114, 212);
+ for(var  x=60 ; x<320; x+=30){
+     for(var y=149;y<380;y+=15){
+         rect(x,y,35,28);
+     }
+}
+//techo
+fill(174, 180, 214);
+triangle(200, 32, 346, 150, 50, 150);
+//puerta
+fill(120, 80, 19);
+rect(179, 297, 40, 77);
+
+//ventana
+fill (245, 204, 24);
+     for(var  x=66 ; x<300; x+=70){
+      rect(x,170,50,50);
+}
+//pasto y arbustos
+var pasto = getImage("cute/GrassBlock");
+var arbusto = getImage("cute/TreeTall");
+for(var y=0;  y<400;y+=30){
+    image(pasto,y,360,60,40);
+    if((y/40)%3===0){
+        image(arbusto,y,320,54,58);
+    }
+    
+}
