@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+    </head>
+    <body>
+        
+       <style>
+        body {
+            background-color: rgb(59, 56, 45);
+        }
+         h2{
+            color: rgb(112, 97, 14);
+           font-family: sans-serif;
+           font-size: 30px;
+        }
+        
+        #title{
+          color: rgb(31, 74, 107); 
+          font-style: italic;
+           font-size: 51px;
+         font-weight: bold;
+        }
+        
+       </style>
+        
+        
+        
+        <h1 id="title" >call of duty mobile's blog</h1>
+
+        <h3>Hablaremos de:</h3>
+        <ul>
+            <li> <a href="#aniversario_call_of_duty">aniversario call of duty mobile!</a></li>
+            <li><a href="#regalos_nuevos">regalos nuevos!</a></li>
+            <li><a href="#skins_nuevas">skins nuevas!</a></li>
+            <li><a href="#cajas_nuevas">cajas nuevas!</a></li>
+        </ul>
+        
+        <h2 id="call_of_duty_mobile" >Lanzamiento call of duty mobile</h2>
+        <a href="https://www.callofduty.com/mx/es/mobile">call of duty mobile</a>
+        <h6>1 de octubre de 2019</h6>
+        
+        <p>fue algo emocionante para la comunidad gamer de los que has seguido el proceso de este video juego ya que hora fue lanzado para celulares mucha gente que conocia el juego y gente que no lo conocia pueden ahora disfrutar desde su celular de el ya que meterion nuevos mapas.</p>
+        
+         <h2 id= "regalos">Regalos nuevos</h2>
+       
+       <p>En el primer aniversario de call of duty mobile, metieron nuevos regalos, como armamento, tarjetas px, skins entre muchas cosas mas para logar obtener algunas de los nuevos regalos que metieron hay que juegar muy seguido</p>
+        
+        
+         <h2 id="skin">Skin nuevas</h2>
+        
+        <p>Las skin que dan de regalo son por la temporada del primer aniversario, para poder obtener algunas de ellas deben ser adquirad por cp (cod poinds) que es la moneda universal del juego, o igual jugando el multijuador o el battle royale</p>
+   
+        <h2 id="cajas">Cajas nuevas</h2>
+        
+        <p>En las cajas las cuales tiene un costo y es una especie de ruleta traen nuevos personajes, armas y demas articulos para el que juege para conseguirlas </p> 
+ 
+    
+    </body>
+</html>
