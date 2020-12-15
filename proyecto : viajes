@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Travel webpage</title>
+        <style>
+        body {
+            background-color: rgb(2, 186, 48);
+        }
+        
+        p {
+            color: yellow;
+        }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Travel to ....</h1>
+        <h1>SAN JOSE DEL PACIFICO</h1>
+        <p>for lovers of cold and nature</p>
+        <ul>
+            <li> excursions</li>
+            <li>many accessible cabins</li>
+            <li>hiking, either on foot or bicycle and riding a zip line</li>
+            <li>many more</li>
+            <li>diverse gastronomy</li>
+        </ul>
+  <img src="https://www.kasandbox.org/programming-images/landscapes/mountains-and-lake.png" alt="paisajes" width="200">
+        <img src="https://www.kasandbox.org/programming-images/landscapes/mountains-sunset.png" alt="paisajes" width="200">
+        <h1>MORELIA MICHOACAN</h1>
+         <p>If you want to go out visit Morelia and its diversity          </p>
+         <ul>
+            <li> cultural and thematic tours</li>
+            <li>visit Janitzio Island</li>
+            <li>visit Regional Michoacano Museum</li>
+            <li>visit Monarch Butterfly Reserve</li>
+            <li>visit Benito Juárez Zoo</li>
+        </ul>
+        <img src="https://www.kasandbox.org/programming-images/landscapes/lake.png" alt="paisajes" width="200">
+        <img src="https://www.kasandbox.org/programming-images/animals/butterfly_monarch.png" alt="paisajes" width="220">
+    </body>
+</html>
