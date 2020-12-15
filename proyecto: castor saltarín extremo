@@ -1,0 +1,174 @@
+var enemyscore= [];
+var score =0;
+var enemyhit=false;
+var sticks = [];
+
+var Beaver = function(x, y) {
+    this.x = x;
+    this.y = y;
+    this.img = getImage("creatures/Hopper-Jumping");
+    this.sticks = 0;
+};
+
+Beaver.prototype.draw = function() {
+    fill(255, 0, 0);
+    this.y = constrain(this.y, 0, height-50);
+    image(this.img, this.x, this.y, 40, 40);
+};
+
+Beaver.prototype.hop = function() {
+    this.img = getImage("creatures/Hopper-Happy");
+    this.y -= 5;
+};
+
+Beaver.prototype.fall = function() {
+    this.img = getImage("creatures/Hopper-Happy");
+    this.y += 5;
+};
+
+Beaver.prototype.checkForStickGrab = function(stick) {
+    if ((stick.x >= this.x && stick.x <= (this.x + 40)) &&
+        (stick.y >= this.y && stick.y <= (this.y + 40))&&
+        (stick.bad === 1 || stick.bad === 3 || stick.bad === 4)){
+        stick.y = -400;
+        this.sticks++;
+        }
+    else if (
+        (stick.x >= this.x && stick.x <= (this.x + 40)) &&
+        (stick.y >= this.y && stick.y <= (this.y + 40)) &&
+        (stick.bad === 2)) {
+        stick.y = -400;
+        this.sticks--;
+    }
+    score = this.sticks;
+};
+
+var Stick = function(x, y, bad) {
+    this.x = x;
+    this.y = y;
+    this.bad=bad; // valor numerico de 1 a 4
+};
+
+Stick.prototype.draw = function() {
+    if(this.bad===1 || this.bad === 3 || this.bad === 4){ // los palos buenos incrementan tu puntuacion
+    fill(89, 71, 0);
+    } else if(this.bad === 2){ //los palos malos disminuyen tu puntuacion
+        fill(181, 27, 181);
+    }
+    rectMode(CENTER);
+    rect(this.x, this.y, 5, 40);
+};
+
+var Enemy = function(x,y){ //crea al enemigo
+    this.x=x;
+    this.y=y;
+};
+
+Enemy.prototype.draw = function() { 
+    image(getImage("avatars/mr-pink-green"    ),this.x,this.y,100,100);
+    
+};
+
+Enemy.prototype.fly = function(){ //movimiento del enemigo
+  this.x -= 2;  
+};
+Beaver.prototype.grabthenemy = function(enemy){
+if (this.y <= enemy.y+10 && (this.x <= enemy.x-20)  ) {
+    enemyhit = true;
+        enemy.y = -400;
+        fill(163, 104, 16);
+        enemyscore.push(1);
+    }
+    
+if(enemy.x < 0 && enemyhit === false){ // Si el enemigo te pasa, pierdes el juego.
+    sticks--;
+    fill(34, 209, 80);
+    rect(100,100,200,200);
+    fill(97, 71, 83);
+    textSize(18);
+    text("GAME OVER!",150,150,200,200);
+    }
+
+};
+
+
+var beaver = new Beaver(200, 300);
+var emy = new Enemy(400,10); //Primer enemigo
+
+var emy2 = new Enemy(380,12); //Segundo enemigo
+
+for (var i = 0; i < 80; i++) {  
+    sticks.push(new Stick(i * 40 + 300, random(20, 260), round(random(1,4)))); 
+    //El parámetro un número del 1 al 4 para determinar aleatoriamente si el palo es bueno o malo
+}
+
+var grassXs = [];
+for (var i = 0; i < 25; i++) { 
+    grassXs.push(i*20);
+}
+
+
+draw = function() {
+    // static
+    image(getImage("cute/Selector"),0,0,400,400);
+    fill(130, 79, 43);
+    rectMode(CORNER);
+    rect(0, height*0.90, width, height*0.10);
+    
+    for (var i = 0; i < grassXs.length; i++) {
+        image(getImage("cute/Star"), grassXs[i], height*0.85, 20, 20);
+        grassXs[i] -= 1;
+        if (grassXs[i] <= -40) {
+            grassXs[i] = width;
+        }
+    }
+    
+    for (var i = 0; i < sticks.length; i++) {
+        sticks[i].draw();
+        beaver.checkForStickGrab(sticks[i]);
+        sticks[i].x -= 1;
+        if(sticks[sticks.length-1].x < 0 && score >=35){ //Ganarás! Si el último palo pasa la pantalla y tu puntuación es de al menos 35, ¡ganas!
+            fill(8, 84, 214);
+            stroke(179, 184, 46);
+            strokeWeight(3);
+            rect(40,40,320,320,40);
+            fill(255, 0, 0);
+            rect(50,50,300,300,40);
+            for (var y=0;y<=3;y++){
+            image(getImage("creatures/Hopper-Cool"),90+y*50,250,50,50);
+            }
+             textAlign(CENTER);
+            fill(56, 54, 54);
+            textSize(24);
+            text("TU GANASTE!!!",80,150,200,200);
+            textSize(14);
+            fill(255, 255, 255); 
+            text("F E L I C I D A D E S ",80,180,200,200);
+            
+        }
+    }
+    
+    if(beaver.sticks === 20){
+        emy.draw();
+        emy.fly();
+        beaver.grabthenemy(emy);
+    }
+    
+    if(beaver.sticks ===15){
+        emy2.draw();
+        emy2.fly();
+        beaver.grabthenemy(emy2);
+    }
+    
+    textSize(15);
+    text("Score: " + score, 15, 20);
+    textSize(15);
+    text("Enemy Score: " + enemyscore.length, 120, 30);
+  
+    if (keyIsPressed && keyCode === 0) {
+        beaver.hop();
+    } else {
+        beaver.fall();
+    }
+    beaver.draw();
+};
