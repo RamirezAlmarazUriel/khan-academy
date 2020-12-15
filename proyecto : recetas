@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+   body {
+            background-color: rgb(135, 8, 199);
+        }
+                h1 {
+            color: orange;
+        }
+             #macarrones_con_queso {
+            color: yellow;
+             }
+              #Espagueti_carbonara {
+            color: red;
+             }
+         
+            #Enchiladas {
+            color: green;
+             }
+         
+           
+        </style>
+    </head>
+    <body>
+       
+        <h1>La abuela's Recipe Book</h1>
+        
+        <h2>Contents:</h2>
+        
+        <ol>
+            <li><a href="#macarrones_con_queso"> macarrones con queso </a></li>
+            <li><a href="#Espagueti_carbonara"> Espagueti carbonara </a></li>
+           <li><a href="#Enchiladas"> Enchiladas </a></li>
+
+
+
+        </ol>
+        
+        <h2 id="macarrones_con_queso">macarrones con queso </h2>
+        
+        <ul>
+            <li>Time: 20 minutos</li>
+            <li>Serves: 2 a 4  personas </li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>Macarrones con Queso </td>  
+               <td>1 paquete </td>  
+            </tr>
+                        <tr>
+              <td>agua </td>  
+               <td>800mil </td>  
+            </tr>
+                        <tr>
+              <td>brocoli </td>  
+               <td>1  </td>  
+            </tr>
+                        <tr>
+              <td>carne molida </td>  
+               <td>200 gramos </td>  
+            </tr>
+            
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Hierve 800ml de agua en una cacerola.
+</p>
+
+        <p><strong>Step 2:</strong> En el momento que el agua hierva, vierte los Macarrones con Queso, el sobre de queso y remueve al mismo tiempo.
+</p>
+
+        <p><strong>Step 3:</strong> Deja hervir a fuego medio sin tapar la cacerola de 14 a 16 minutos. Remueve de vez en cuando.
+</p>
+
+ <p><strong>Step 4:</strong> Para hacer de esta pasta un plato completo, incorpora el ingrediente de tu preferencia, previamente cocido o preparado..
+</p>
+
+ <p><strong>tip:</strong> Usa tu creatividad para complementar los deliciosos Macarrones con Queso con lo que más te guste.
+</p>
+
+        <h2 id="Espagueti_carbonara">Espagueti carbonara </h2>
+        
+        <ul>
+            <li>Time: 40 minutos</li>
+            <li>Serves: 4  personas </li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td> espagueti </td>  
+               <td> 400g </td>  
+            </tr>
+                        <tr>
+              <td> huevos </td>  
+               <td> 2 </td>  
+            </tr>
+                        <tr>
+              <td>queso curado (parmesano)</td>  
+               <td>150g  </td>  
+            </tr>
+                        <tr>
+              <td> bacon o panceta </td>  
+               <td>200 gramos </td>  
+            </tr>
+             <tr>
+              <td> sal y pimienta </td>  
+               <td> Al gusto </td>  
+            </tr>
+             <tr>
+              <td> aceite de oliva </td>  
+               <td>un pequeño chorro </td>  
+            </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Ponemos un puñadito de sal (generoso) en abundante agua hirviendo. Después añadimos los espagueti y los dejamos cocer aquí alrededor de 10 minutos. hasta que estén al «dente». Conviene removerlos con frecuencia sobre todo al principio de la cocción, para que no se peguen.
+</p>
+
+        <p><strong>Step 2:</strong> Mientras se cuecen preparamos la carbonara. En un bol añadimos las yemas de los huevos. La clara es mejor guardarla para otra elaboración ya que, si la añadimos, parecerá más una tortilla de espaguetis, que una salsa en sí. Pero si no te importa, puedes añadirla. Añadimos también el queso rallado y mezclamos ambos ingredientes con un tenedor. Quedará una especie de masa muy densa y ésta, será la carbonara.
+</p>
+
+        <p><strong>Step 3:</strong> En una sartén ponemos un pequeño chorrito de aceite. Cuando esté bien caliente, añadimos el bacon o la panceta, cortado en dados más bien pequeños. Pasados un par de minutos, cuando estén fritos, retiramos del fuego y reservamos.
+</p>
+
+ <p><strong>Step 4:</strong> Una vez hecho esto y cuando los espaguetis estén cocinados, guardamos unos cuantos cucharones del caldo de la cocción. Después escurrimos los espaguetis del resto del caldo.
+</p>
+
+ <p><strong>step 5:</strong> Sin demora, ya que será el propio calor residual de los espagueti los que vayan a cocinar la carbonara, echamos la pasta en el bol donde la habíamos preparado. Añadimos el bacon, con el juguito que hayan podido soltar y un poco del caldo de la cocción. Removemos todo bien con un tenedor para que los espaguetis absorban toda la salsa. Si ves que queda muy densa, puedes añadir más caldo de la cocción, hasta que haya quedado una salsa muy cremosa (no olvides remover enérgicamente todo. La pasta es muy porosa y absorbe las salsa con relativa facilidad. Pero necesita ser removido para ayudar a este proceso)
+</p>
+
+<p><strong>step 6:</strong>  Finalmente, cuando hayamos conseguido la cremosidad de la salsa deseado, espolvorear con abundante pimienta negra recién molida. Se dice que el nombre «carbonara» viene del color que le da esta especia, que recuerda el color del carbón. Servir inmediatamente
+</p>
+
+<h2 id="Enchiladas">Enchiladas </h2>
+        
+        <ul>
+            <li>Time: 30 minutos</li>
+            <li>Serves: 3  personas </li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>queso  </td>  
+               <td>1/2 kilo </td>  
+            </tr>
+                        <tr>
+              <td> cebollas </td>  
+               <td> 1/4 </td>  
+            </tr>
+                        <tr>
+              <td>salsa verde </td>  
+               <td> 1 taza  </td>  
+            </tr>
+                        <tr>
+              <td> cilantro fresco </td>  
+               <td> 1 cucharada finamente picada </td>  
+            </tr>
+            <tr>
+              <td>torillas </td>  
+               <td> 16  </td>  
+            </tr>
+            <tr>
+              <td> crema </td>  
+               <td> 1/4 de taza  </td>  
+            </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> calentar las torillas en el sarrten.
+</p>
+
+        <p><strong>Step 2:</strong> Rellenar cada una con un poco de queso oaxaca desmenuzado y dejar que se derrita el queso dejando cada enchilada ahí cuidando que no se queme la tortilla. Se puede hacer rollito la tortilla rellena de queso o solo doblarla por la mitad.
+</p>
+
+        <p><strong>Step 3:</strong> Calentar un poco la salsa verde y vaciar encima de las enchiladas.
+</p>
+
+ <p><strong>Step 4:</strong> Agregar encima un poco de crema, queso fresco, cebolla y cilantro.
+</p>
+
+
+    <p><em>Source: <a href="https://lamoderna.com.mx/lista-recetas/51-macarrones-con-queso-la-moderna?gclid=Cj0KCQjwuL_8BRCXARIsAGiC51BPECjlcUF5fsvyduu5woIVeJ_PxpcikINLbKGgMFJ_l6G6EjnhCWgaAjTDEALw_wcB">Some recipes websites</a></em></p>
+  
+      <p><em>Source: <a href="https://www.cocinacaserayfacil.net/espaguetis-carbonara/">Some recipes websites</a></em></p>
+  
+  <p><em>Source: <a href="https://www.kiwilimon.com/receta/platos-fuertes/mexicanos/enchiladas-mexicanas-economicas?fbclid=IwAR3N45zanuM6vwg41UKiE9gZoxemWxfOOjnfBcwh4MbjBNrRrsDKXgagWW8">Some recipes websites</a></em></p>    
+    </body>
+</html>
