@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+            body{
+              background-color:rgb(173, 55, 0);
+            }
+            
+           .title { 
+             text-align: center;
+             font-family: sans-serif; 
+              font-size:60px; 
+              color:rgb(104, 99, 237);
+           }
+            .birthday{
+              font-size:35px;
+              color:rgb(207, 190, 0);
+              text-align: center;
+             font-family: cursive;  
+            }
+            
+           #my-birthday {
+             float:right; 
+              margin-bottom :100px;
+            }
+            .data{
+             font-size:30px;
+             color:rgb(112, 97, 0);
+             font-family: "Georgia", "Palatino", serif;  
+            } 
+            .phone{
+            font-size:15px;
+            font-family: "Monaco", "Lucida Console", monospace;    
+             color:rgb(186, 43, 91);   
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        
+        <h1 class="title ">You're invited!</h1>
+        <h2 class="birthday" >to my birthday party!</h2>
+         <img id="my_birthday" src="https://www.kasandbox.org/programming-images/seasonal/fireworks-scattered.png" alt="my_birthday" >
+        
+        
+        
+        <div class="data"><p> we will celebrate it:</p>
+        <ul>
+            <li>date: May 3, 2020 </li>
+            <li>time: 3 afternoon </li>
+            <li>direction:xxxxxxxxx</li>
+        </ul></div>
+        <p>Come now there will be delicious food, games and lots of         fun</p>
+        <p>I would very much like you to accompany me on my day</p>
+        <p>my phone:<span class="phone">xxx-xxx-xx</span></p>
+    </body>
+</html>
